@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 # ── CONFIG ──────────────────────────────────────────────
 PRICE_LIMIT    = 300
 GMAIL_FROM     = "miguelrobles0723@gmail.com"
-GMAIL_PASSWORD = "vgmp dvsq jjrp lpxv"
+GMAIL_PASSWORD = os.environ.get("GMAIL_PASSWORD", "vgmp dvsq jjrp lpxv")
 NOTIFY_EMAIL   = "miguelrobles0723@gmail.com"
 CHECK_INTERVAL = 300
 SEEN_FILE      = "seen_ids.json"
